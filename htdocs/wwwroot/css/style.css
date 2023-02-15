@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,61 +6,81 @@
     font-size: 24px;
 }
 
-body{
-    background-color: #525252;
+body {
+    background-color: #ffffff;
 }
 
 h1 {
     text-align: center;
-    color: #ccc;
-    padding: 1rem 2rem;
-    font-size: 32px;
+    color: #6978a5;
+    padding: 2rem 2rem;
+    font-size: 48px;
 }
 
-.container{
+.container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: left;
     align-items: center;
     width: 100%;
-    height: 600px;
-    background-color: #363636;
+    height: 900px;
+    background-color: #628de4;
 }
 
 .example-div {
-    height: 300px;
-    width: 300px;
-    background-color: #a80000;
+    margin-left: 5rem;
+    height: 680px;
+    width: 1000px;
+    background-color: #6978a5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    text-align: center;
+
 }
 
-nav{
+nav {
     display: flex;
     flex-direction: row;
-    justify-content: start;
-    background-color: #363636;
-    color: #ccc;
-    padding: 1rem 2rem;
+    justify-content: center;
+    background-color: #628de4;
+    color: #423946;
+    padding: 1.4rem 5rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    height: 6rem;
 }
 
-.nav-items{
+.nav-items {
     display: flex;
-
+    
 }
 
-.nav-head{
-    margin-right: 1rem;
-    padding: 0 1rem;
-    border-right: 2px solid #ccc;
+.nav-head {
+  font-family: Arial, sans-serif;
+  padding: 0 3rem 1rem;
+  border-right: 2px solid #3d2b47;
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #423946;
 }
 
-.nav-item{
-    margin: 0 1rem;
+.nav-item {
+    background-color:#6978a5;
+    margin: 0 2rem;
+    flex-direction: row;
+    display: flex;
+    border-radius: 8px;
+    justify-content: center;
+    color: #1bffce;
 }
 
 .nav-item a {
     text-decoration: none;
-    color: #ccc;
+    margin: 0.6rem 5rem 1rem;
+    text-align: center;
+    font-size: 1.6rem;
+    color: #423946;
 }
 
 .nav-item a:hover{
-    color: #42e237;
+    color: #1bffce;
 }
