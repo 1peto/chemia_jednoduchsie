@@ -9,3 +9,4 @@ sprav index aby vyzeral esteticky.
 
 
 oznamit ivkovi a davidorovi
+commitujem dorici a nejde to
