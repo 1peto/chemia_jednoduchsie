@@ -30,6 +30,8 @@ h1 {
     height: 300px;
     width: 300px;
     background-color: #a80000;
+    text-align: center;
+    padding-top: 130px;
 }
 
 nav{
@@ -49,7 +51,7 @@ nav{
 .nav-head{
     margin-right: 1rem;
     padding: 0 1rem;
-    border-right: 2px solid #ccc;
+    border-right: 500px solid #ffd900;
 }
 
 .nav-item{
