@@ -40,7 +40,7 @@ h1 {
 nav {
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: center;
     background-color: #628de4;
     color: #423946;
     padding: 1.4rem 5rem;
