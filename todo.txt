@@ -1,0 +1,11 @@
+1. vymysli color scheme na stranku
+uprav velkost hlavicky a navigacie
+zmen shitty font na dajaky ultra futuristic, nech to vyzera profi
+do navigacie pridaj rocniky odkazujuce na rozlicne stranky  ====  1. 2. 3. rocnik atd
+sprav index aby vyzeral esteticky.
+
+
+
+
+
+oznamit ivkovi a davidorovi
