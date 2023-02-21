@@ -1,7 +1,7 @@
-1. vymysli color scheme na stranku
-uprav velkost hlavicky a navigacie
+1. zlepsi color na stranke
+uprav nav a vylepsi padding atd aby nebol overflow
 zmen shitty font na dajaky ultra futuristic, nech to vyzera profi
-do navigacie pridaj rocniky odkazujuce na rozlicne stranky  ====  1. 2. 3. rocnik atd
+vyhotov stra
 sprav index aby vyzeral esteticky.
 
 
