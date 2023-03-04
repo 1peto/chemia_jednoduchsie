@@ -1,85 +1,162 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 24px;
-}
-
 body {
-    background-color: white;
+  overflow: hidden;
 }
 
-h1 {
-    text-align: center;
-    color: #6978a5;
-    padding: 2rem 2rem;
-    font-size: 48px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
 }
 
-.container {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    width: 100%;
-    height: 700px;
-    background-color: #628de4;
+.frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
 }
 
-.example-div {
-    margin-left: 5rem;
-    height: 550px;
-    width: 900px;
-    background-color: #6978a5;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
-    text-align: center;
-
+.navbox {
+  display: flex;
+  width: 100%;
+  padding-top: 10px;
+  padding-right: 14px;
+  padding-left: 5%;
+  padding-bottom: 10px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #253369;
 }
 
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: #628de4;
-    color: #423946;
-    padding: 1.4rem 5rem;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    height: 6rem;
+.text {
+  color: #e4ebf7;
+  font-weight: 300;
+  font-size: 45px;
+  line-height: 120%;
+  font-weight: undefined;
+  letter-spacing: 0em;
+  text-shadow: 0px 6px 4px rgba(0, 0, 0, 0.5);
 }
 
-.nav-items {
-    display: flex;
-    border-left: 2px solid #3d2b47;
-    justify-content: center;
-    
+.contpodnav {
+  display: flex;
+  align-items: flex-start;
+  grid-column-gap: 17px;
+  grid-row-gap: 17px;
 }
 
-.nav-head {
-  font-family: Arial, sans-serif;
-  margin: 7px 20px 50px;
-  font-weight: bold;
-  font-size: 2rem;
-  color: #423946;
+.content-align-left {
+  display: flex;
+  width: 100%;
+  height: 926px;
+  max-width: 844px;
+  margin-left: 196px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  grid-column-gap: 32px;
+  grid-row-gap: 32px;
 }
 
-.nav-item {
-    background-color:#6978a5;
-    margin: 0px 1rem 0rem 0.5rem;
-    flex-direction: row;
-    display: flex;
-    border-radius: 8px;
-    justify-content: center;
+.texts {
+
+  display: flex;
+  width: 100%;
+  height: 371px;
+  max-width: 806px;
+  padding-top: 50px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  grid-column-gap: 23px;
+  grid-row-gap: 23px;
 }
 
-.nav-item a {
-    text-decoration: none;
-    padding: 15px 20px;
-    text-align: center;
-    font-size: 1.6rem;
-    color: #423946;
+.text-2 {
+  font-family: 'Roboto';
+  color: #000;
+  font-size: 65px;
+  line-height: 120%;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 0em;
+  padding-bottom: 2%;
+}
+.textvys{
+  color: #000;
+  font-size: 25px;
+  line-height: 160%;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 0em;
 }
 
-.nav-item a:hover{
-    color: #1bffce;
+.frame-2 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
 }
+
+.text-3 {
+  color: #000;
+  font-family: 'Roboto';
+  font-size: 25px;
+  line-height: 150%;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0em;
+}
+
+.buttons {
+  display: flex;
+  width: 100%;
+  height: 362px;
+  max-width: 815px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-row-gap: 45px;
+  margin-bottom: 180px;
+}
+
+.button {
+  display: flex;
+  width: 100%;
+  height: 65px;
+  max-width: 653px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  border-radius: 100px;
+  background-color: #597ef7;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+}
+
+.label-text {
+  color: #fff;
+  font-size: 34px;
+  line-height: 20px;
+  font-weight: 300;
+  text-align: center;
+}
+.label-text a:hover{
+  color: #fff;
+  font-size: 34px;
+  line-height: 20px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.obrazok{
+  margin-left: 100px;
+  margin-top: 65px;
+}
+
