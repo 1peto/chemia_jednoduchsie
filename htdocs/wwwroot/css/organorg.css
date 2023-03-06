@@ -11,14 +11,18 @@ body {
     font-size: 24px;
 }
 
-.desktop---1 {
+a {
+    text-decoration: none;
+}
+
+.container{
     display: flex;
     margin-bottom: 220px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    column-gap: 0px;
+    row-gap: 0px;
     background-color: #fff;
 }
 
@@ -40,8 +44,10 @@ body {
     font-weight: 300;
     font-size: 45px;
     line-height: 120%;
-    letter-spacing: 0em;
     text-shadow: 0px 6px 4px rgba(0, 0, 0, 0.5);
+}
+.text:hover {
+    color: #ADC6FF;
 }
 
 .contpodnav {
@@ -54,8 +60,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
+    column-gap: 10px;
+    row-gap: 10px;
 }
 
 .image-3 {
@@ -75,8 +81,8 @@ body {
     padding-left: 170px;
     justify-content: center;
     align-items: center;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
+    column-gap: 10px;
+    row-gap: 10px;
 }
 
 .textvys {
@@ -98,8 +104,8 @@ body {
     padding: 84px 10px 343px;
     justify-content: center;
     align-items: center;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
+    column-gap: 10px;
+    row-gap: 10px;
 }
 
 .buttons {
@@ -112,8 +118,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-column-gap: 96px;
-    grid-row-gap: 96px;
+    column-gap: 96px;
+    row-gap: 96px;
     text-align: left;
 }
 
@@ -125,12 +131,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-column-gap: 8px;
-    grid-row-gap: 8px;
     border-radius: 100px;
     background-color: #597ef7;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    text-decoration: none;
 }
 
 .state-layer {
@@ -139,15 +142,23 @@ body {
     justify-content: center;
     align-items: center;
     flex: 0 auto;
-    grid-column-gap: 8px;
-    grid-row-gap: 8px;
+    column-gap: 8px;
+    row-gap: 8px;
 }
 
 .label-text {
     color: #fff;
     font-size: 34px;
     line-height: 20px;
-    font-weight: 400;
+    font-weight: 300;
     text-align: center;
-    letter-spacing: 0.100000001490116
+    padding: 20px;
+}
+
+.label-text:hover {
+    color: #253369;
+}
+
+.button:hover {
+    background-color: #7CB305;
 }
