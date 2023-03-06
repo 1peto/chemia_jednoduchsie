@@ -1,7 +1,8 @@
 body {
-    overflow: hidden;
+    text-align: center;
+    height: 100vh;
 }
-  
+
 * {
     margin: 0;
     padding: 0;
@@ -14,8 +15,8 @@ body {
     display: flex;
     margin-bottom: 220px;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     background-color: #fff;
@@ -39,7 +40,6 @@ body {
     font-weight: 300;
     font-size: 45px;
     line-height: 120%;
-    font-weight: undefined;
     letter-spacing: 0em;
     text-shadow: 0px 6px 4px rgba(0, 0, 0, 0.5);
 }
@@ -52,7 +52,7 @@ body {
     margin-bottom: -32px;
     padding-top: 30px;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
@@ -74,7 +74,7 @@ body {
     padding-right: 170px;
     padding-left: 170px;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
 }
@@ -149,5 +149,5 @@ body {
     line-height: 20px;
     font-weight: 400;
     text-align: center;
-    letter-spacing: 0.10000000149011612px;
+    letter-spacing: 0.100000001490116
 }
