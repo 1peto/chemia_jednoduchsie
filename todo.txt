@@ -1,12 +1,10 @@
-1. zlepsi color na stranke
-uprav nav a vylepsi padding atd aby nebol overflow
-zmen shitty font na dajaky ultra futuristic, nech to vyzera profi
-vyhotov stra
-sprav index aby vyzeral esteticky.
+PREVENTNUT OVERFLOW RIADKOV TEXTU  --- ASI OZNAMIT SAMOVI ZATIAL NEVIEM VYRIESIT
+
+PRIDAT STRANKU TAKU DAJAKU TABULKU NA VYBER ZLUCENIN
+
+ROZDELIT MODELY DO 1R2R3R
+
+ZLEPSIT STYL MOZNO BG NA STRANKACH
 
 
-
-
-
-oznamit ivkovi a davidorovi
-commitujem dorici a nejde to
+OPTIMALIZOVAT CSS
