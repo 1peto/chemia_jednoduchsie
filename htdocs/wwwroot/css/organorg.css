@@ -66,10 +66,8 @@ a {
 }
 
 .image-3 {
-    margin-top: -51px;
-    margin-bottom: -67px;
-    -o-object-fit: cover;
-    object-fit: cover;
+    margin-top: 51px;
+    margin-bottom: 67px;
 }
 
 .frame-3 {
@@ -93,7 +91,6 @@ a {
     line-height: 120%;
     font-weight: 200;
     text-align: center;
-    letter-spacing: 0em;
 }
 
 .frame-4 {
@@ -142,7 +139,6 @@ a {
     padding: 10px 24px;
     justify-content: center;
     align-items: center;
-    flex: 0 auto;
     column-gap: 8px;
     row-gap: 8px;
 }

@@ -1,4 +1,6 @@
 body {
+  text-align: center;
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -13,11 +15,36 @@ body {
 a {text-decoration: none;
 }
 
+table,
+td {
+    border: 2px solid #253369;
+    width:65%;
+    padding: 5px;
+}
+
+th{
+  padding: 15px;
+}
+thead,
+tfoot {
+  padding: 5px;
+    background-color: #597ef7;
+    color: #fff;
+}
 .frame {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #ffffff;
+}
+.tabulkatestt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  justify-content: center;
+  height: 75%;
+ 
 }
 
 .navbox {
@@ -38,7 +65,6 @@ a {text-decoration: none;
   font-weight: 300;
   font-size: 45px;
   line-height: 120%;
-  font-weight: undefined;
   letter-spacing: 0em;
   text-shadow: 0px 6px 4px rgba(0, 0, 0, 0.5);
 }
@@ -83,7 +109,6 @@ a {text-decoration: none;
   line-height: 120%;
   font-weight: 300;
   text-align: center;
-  letter-spacing: 0em;
   padding-bottom: 2%;
 }
 
@@ -93,7 +118,6 @@ a {text-decoration: none;
   line-height: 160%;
   font-weight: 300;
   text-align: center;
-  letter-spacing: 0em;
 }
 
 .frame-2 {
