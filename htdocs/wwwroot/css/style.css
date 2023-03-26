@@ -73,6 +73,7 @@ a{
     flex-direction: row;
     justify-content: center;
     width: 100%;
+    margin-bottom: 0.5rem;
 }
 .container2 .button{
     height: 6vh;
@@ -85,9 +86,9 @@ a{
 .header h2{
     font-family: 'Roboto';
     color: #000;
-    font-size: 4.6vh;
+    font-size: 3rem;
     font-weight: 500;
-    margin: 1.5rem ;
+    margin: 1rem ;
     border-bottom: solid 0.35vh #7CB305;
     padding-bottom: 0.5rem;
 }
@@ -111,7 +112,7 @@ a{
     align-items: center;
     width: 55%;
     height: 70%;
-    margin-top: 7rem;
+    margin-top: 2vh;
 }
 
 .hbox {
@@ -231,10 +232,6 @@ tr:nth-child(even){
 }
 
 @media only screen and (max-width: 912px) {
-    .container {
-        width: 100%;
-    }
-
     .container img {
         display: none;
     }
@@ -283,5 +280,17 @@ tr:nth-child(even){
 
     .hbox p{
         font-size: 1.25rem;
+    }
+}
+@media only screen and (max-width: 512px) {
+    .header h2{
+        font-size:1.8rem ;
+    }
+    nav{
+        padding: 0;
+        justify-content: center;    
+    }
+    nav h1{
+        font-size: 1.6rem;
     }
 }
