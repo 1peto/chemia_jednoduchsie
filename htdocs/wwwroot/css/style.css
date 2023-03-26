@@ -83,6 +83,79 @@ a{
     z-index: -1;
 }
 
+.container3{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
+.brominfo{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 6vh;
+    height: 40vh;
+}
+
+.brominfo h3{
+    margin-bottom: 1.5rem;
+    font-size: 28px;
+    border-bottom: solid 0.35vh #7CB305;
+}
+
+.brominfo p{
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+}
+
+.podnadpis{
+    display: flex;
+    width: 70vw;
+    justify-content: center;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    text-decoration-color: #597ef7;
+    text-underline-offset: 0.6rem;
+}
+
+.brominfo2{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    height: 50vh;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.brominfo2_text{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    height: 40vh;
+    width: 60%;
+    font-size: 1.4rem;
+}
+
+.brominfo2_text h3{
+    margin-bottom: 1.5rem;
+    font-size: 28px;
+    border-bottom: solid #597ef7;
+    width: 85%;
+}
+
+.brominfo2_text p{
+    font-size: 22px;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.brominfo2_obrazok{
+    margin-left: 6rem;
+}
+
+
 .header h2{
     font-family: 'Roboto';
     color: #000;
@@ -186,7 +259,7 @@ a{
   flex-direction: column;
   align-items: center;
   background-color: #ffffff;
-  margin-top: 15vh;
+  margin-top: 10vh;
   width: 100%;
   font-size: 1.5rem;
 }
@@ -194,7 +267,9 @@ a{
 table{
     border-collapse: collapse;
     box-shadow: 0 5px 10px grey;
-    background-color: #E4EBF7
+    background-color: #E4EBF7;
+    table-layout: fixed;
+    width: 75%;
 }
 thead{
     background-color: #253369;
@@ -253,27 +328,29 @@ tr:nth-child(even){
     body{
         text-align: center;
     }
-    nav img{
-        display: none;
 
-    }
     .table{
         margin-left: 5vw;
         margin-right: 5vw;
     }
+
     .tvys td{
         font-size: 1rem;
     }
+
     td{
         padding:1.2vw 2.4vw;
         font-size: 1rem;
     }
+
     th{
     padding: 1.2vw 2.4vw;
     font-size: 1.5rem;
     }
+
 }
-@media only screen and (max-width: 1024px) {
+
+@media only screen and (max-width: 1120px) {
     .container2 img {
         display: none;
     }
@@ -281,16 +358,86 @@ tr:nth-child(even){
     .hbox p{
         font-size: 1.25rem;
     }
+
+    .brominfo2_obrazok{
+        display: none;
+        margin: 0;
+    }
+
+    .container3{
+        margin-left: 5vh;
+        margin-right: 5vh;
+    }
+
+    .brominfo h2{
+        font-size: 2rem;
+    }
+
+    .brominfo p{
+        font-size: 1.2rem;
+    } 
+
+    .podnadpis{
+        font-size: 2rem;
+        width: 90vw;
+    }
+    
+    .brominfo2_text{
+        width: 100vw;
+    }
+
+    .header h2{
+        font-size: 2.4rem;
+    }
+
+    table{
+        width: 100%;
+    }
 }
-@media only screen and (max-width: 512px) {
+
+@media only screen and (max-width: 564px) {
     .header h2{
         font-size:1.8rem ;
     }
+
     nav{
         padding: 0;
         justify-content: center;    
     }
+
     nav h1{
         font-size: 1.6rem;
+    }
+
+    nav img{
+        display: none;
+
+    }
+
+    .container3{
+        margin-left: 2.5vw;
+        margin-right: 2.5vw;
+        margin-bottom: 2.5vw;
+    }
+
+    .brominfo h2{
+        font-size: 1.5rem;
+    }
+
+    .brominfo p{
+        font-size: 1rem;
+    } 
+
+    .podnadpis{
+        font-size: 1.5rem;
+        width: 95vw;
+    }
+    
+    .container3 h3{
+        font-size: 1.4rem;
+    }
+    
+    td{
+        font-size: 0.7rem
     }
 }
