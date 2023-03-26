@@ -31,7 +31,6 @@ nav h1{
 
 .promo{
     margin: 0.5rem;
-    align-items: baseline;
     padding-top: 0.2rem;
 }
 
@@ -178,14 +177,13 @@ a{
   align-items: center;
   background-color: #ffffff;
   justify-content: center;
-  height: 75%;
+  margin-top: 7rem;
 }
 
 table,
 td{
-  border: 2px solid #253369;
-  width:65%;
-  padding: 5px;
+  border: 5px solid #253369;
+  width: 85%;
 }
   
 th{
@@ -212,13 +210,16 @@ tfoot{
         width: 100%;
         margin: 0;
     }
+
     .hbox h3{
-    font-size: 1.3rem;
+        font-size: 1.3rem;
     }
+
     .button{
         margin-bottom: 1rem;
         width: 80%;
     }
+
     body{
         text-align: center;
     }
@@ -227,8 +228,9 @@ tfoot{
 @media only screen and (max-width: 1024px) {
     .container2 img {
         display: none;
-        }
+    }
+
     .hbox p{
-    font-size: 1.25rem;
+        font-size: 1.25rem;
     }
 }
