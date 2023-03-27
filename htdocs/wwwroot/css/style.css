@@ -96,7 +96,7 @@ a{
     margin-right: 15vw;
 }
 
-.brominfo{
+.hboxzluc{
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -104,15 +104,34 @@ a{
     height: 40vh;
 }
 
-.brominfo h3{
+.hboxzluc h3{
     margin-bottom: 1.5rem;
     font-size: 28px;
     border-bottom: solid 0.35vh #7CB305;
 }
 
-.brominfo p{
+.hboxzluc p{
     margin-bottom: 2rem;
     font-size: 1.4rem;
+}
+
+.hboxzluc1{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 6vh;
+    height: 40vh;
+}
+
+.hboxzluc1 h3{
+    margin-bottom: 1.5rem;
+    font-size: 25px;
+    border-bottom: solid 0.35vh #7CB305;
+}
+
+.hboxzluc1 p{
+    margin-bottom: 2rem;
+    font-size: 19px;
 }
 
 .podnadpis{
@@ -125,7 +144,7 @@ a{
     text-underline-offset: 0.6rem;
 }
 
-.brominfo2{
+.hboxzluc2{
     display: flex;
     flex-direction: row;
     text-align: left;
@@ -134,7 +153,7 @@ a{
     margin-top: 2rem;
 }
 
-.brominfo2_text{
+.hboxzluc2_text{
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -143,23 +162,48 @@ a{
     font-size: 1.4rem;
 }
 
-.brominfo2_text h3{
+.hboxzluc2_text1{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    height: 40vh;
+    width: 60%;
+    font-size: 1.4rem;
+}
+
+.hboxzluc2_text1 h3{
+    margin-bottom: 1.5rem;
+    font-size: 25px;
+    border-bottom: solid #597ef7;
+    width: 85%;
+}
+
+.hboxzluc2_text1 p{
+    font-size: 19px;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.hboxzluc2_text h3{
     margin-bottom: 1.5rem;
     font-size: 28px;
     border-bottom: solid #597ef7;
     width: 85%;
 }
 
-.brominfo2_text p{
+.hboxzluc2_text p{
     font-size: 22px;
     margin-bottom: 2rem;
     width: 100%;
 }
 
-.brominfo2_obrazok{
+.hboxzluc2_obrazok{
     margin-left: 6rem;
 }
 
+.hboxzluc2_obrazok1{
+    margin-left: 11rem;
+}
 
 .header h2{
     font-family: 'Roboto';
@@ -364,7 +408,12 @@ tr:nth-child(even){
         font-size: 1.25rem;
     }
 
-    .brominfo2_obrazok{
+    .hboxzluc2_obrazok{
+        display: none;
+        margin: 0;
+    }
+
+    .hboxzluc2_obrazok1{
         display: none;
         margin: 0;
     }
@@ -374,11 +423,19 @@ tr:nth-child(even){
         margin-right: 5vh;
     }
 
-    .brominfo h2{
+    .hboxzluc h2{
         font-size: 2rem;
     }
 
-    .brominfo p{
+    .hboxzluc p{
+        font-size: 1.2rem;
+    }
+
+    .hboxzluc1 h2{
+        font-size: 2rem;
+    }
+
+    .hboxzluc1 p{
         font-size: 1.2rem;
     } 
 
@@ -387,7 +444,11 @@ tr:nth-child(even){
         width: 90vw;
     }
     
-    .brominfo2_text{
+    .hboxzluc2_text{
+        width: 100vw;
+    }
+
+    .hboxzluc2_text1{
         width: 100vw;
     }
 
@@ -425,11 +486,19 @@ tr:nth-child(even){
         margin-bottom: 2.5vw;
     }
 
-    .brominfo h2{
+    .hboxzluc h2{
         font-size: 1.5rem;
     }
 
-    .brominfo p{
+    .hboxzluc p{
+        font-size: 1rem;
+    }
+
+    .hboxzluc1 h2{
+        font-size: 1.5rem;
+    }
+
+    .hboxzluc1 p{
         font-size: 1rem;
     } 
 
