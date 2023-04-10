@@ -3,10 +3,10 @@ var cube, HBr;
 var spotlight;
 
 function addLights() {
-  ambientLight = new THREE.AmbientLight(0xffffff, 0.7);
+  ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
   scene.add(ambientLight);
 
-  var pointLight1 = new THREE.PointLight(0xffffff, 3, 10);
+  var pointLight1 = new THREE.PointLight(0xffffff, 2, 10);
   pointLight1.position.set(2, 3, 3);
   pointLight1.castShadow = true;
   scene.add(pointLight1);
@@ -16,17 +16,17 @@ function addLights() {
   pointLight2.castShadow = true;
   scene.add(pointLight2);
 
-  var pointLight3 = new THREE.PointLight(0xffffff, 2, 20);
+  var pointLight3 = new THREE.PointLight(0xffffff, 1, 20);
   pointLight3.position.set(-1,1,-5);
   pointLight3.castShadow = true;
   scene.add(pointLight3);
 
-  //var helper1 = new THREE.PointLightHelper(pointLight1,1);
-  //scene.add(helper1)
-  //var helper2 = new THREE.PointLightHelper(pointLight2,1);
-  //scene.add(helper2)
-  //var helper3 = new THREE.PointLightHelper(pointLight3,1);
-  //scene.add(helper3)
+  var helper1 = new THREE.PointLightHelper(pointLight1,1);
+  scene.add(helper1)
+  var helper2 = new THREE.PointLightHelper(pointLight2,1);
+  scene.add(helper2)
+  var helper3 = new THREE.PointLightHelper(pointLight3,1);
+  scene.add(helper3)
 }
 
 function addHBr() {
