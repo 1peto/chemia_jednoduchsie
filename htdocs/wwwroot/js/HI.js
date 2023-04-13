@@ -1,5 +1,5 @@
 var camera, scene, renderer, controls;
-var cube, HBr;
+var cube, HI;
 var spotlight;
 
 function addLights() {
@@ -29,14 +29,14 @@ function addLights() {
   // scene.add(helper3)
 }
 
-function addHBr() {
+function addHI() {
   const loader = new THREE.GLTFLoader();
-  loader.load("/htdocs/models/1_rocnik/kyseliny/bezkyslikate/jednosytne/HBr.glb", function (imported_model) {
+  loader.load("/htdocs/models/1_rocnik/kyseliny/bezkyslikate/jednosytne/HI.glb", function (imported_model) {
     scene.add(imported_model.scene);
-    HBr = imported_model.scene;
-    HBr.position.set(0, 0, 0);
-    HBr.rotation.set(0, 4.75, 0)
-    HBr.castShadow = true;
+    HI = imported_model.scene;
+    HI.position.set(0, 0, 0);
+    HI.rotation.set(0, 4.75, 0)
+    HI.castShadow = true;
   });
 }
 
@@ -71,7 +71,7 @@ function init() {
   scene = new THREE.Scene();
   addLights();
   addSphere()
-  addHBr();
+  addHI();
 
   controls = new THREE.OrbitControls(camera, renderer.domElement);
 }
