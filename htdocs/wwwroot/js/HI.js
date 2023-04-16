@@ -31,7 +31,7 @@ function addLights() {
 
 function addHI() {
   const loader = new THREE.GLTFLoader();
-  loader.load("/htdocs/models/1_rocnik/kyseliny/bezkyslikate/jednosytne/HI.glb", function (imported_model) {
+  loader.load("/htdocs/models/anorganicke/HI.glb", function (imported_model) {
     scene.add(imported_model.scene);
     HI = imported_model.scene;
     HI.position.set(0, 0, 0);

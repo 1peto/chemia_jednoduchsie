@@ -31,7 +31,7 @@ function addLights() {
 
 function addHCl() {
   const loader = new THREE.GLTFLoader();
-  loader.load("/htdocs/models/1_rocnik/kyseliny/bezkyslikate/jednosytne/HCl.glb", function (imported_model) {
+  loader.load("/htdocs/models/anorganicke/HCl.glb", function (imported_model) {
     scene.add(imported_model.scene);
     HCl = imported_model.scene;
     HCl.position.set(0, 0, 0);
