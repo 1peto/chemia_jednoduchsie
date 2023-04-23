@@ -1,7 +1,6 @@
 canvas{
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
+    margin-left: 100vh;
+    margin-bottom: 5vh;
   }
 
 * {
@@ -251,10 +250,6 @@ a{
     width: 100%;
 }
 
-.hboxzluc2_obrazok{
-    margin-left: 6rem;
-}
-
 .hboxzluc2_obrazok1{
     margin-left: 11rem;
 }
@@ -468,11 +463,6 @@ tr:nth-child(even){
 
     .hbox p{
         font-size: 1.25rem;
-    }
-
-    .hboxzluc2_obrazok{
-        display: none;
-        margin: 0;
     }
 
     .hboxzluc2_obrazok1{
