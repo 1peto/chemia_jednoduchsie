@@ -66,7 +66,8 @@ function init() {
   renderer.setSize(window.innerWidth*0.4, window.innerHeight*0.4);
   renderer.shadowMap.enabled = true;
   renderer.shadowMap.type = THREE.PCFSoftShadowMap;
-  document.body.appendChild(renderer.domElement);
+  const container = document.getElementById('canvas-container');
+  container.appendChild(renderer.domElement);
 
   scene = new THREE.Scene();
   addLights();
