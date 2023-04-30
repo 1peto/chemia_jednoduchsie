@@ -18,13 +18,14 @@ body{
 }
 
 footer{
+    position: absolute;
+    bottom: 0;
     display: flex;
     padding-left: 4%;
     justify-content: left;
     align-items: center;
-    margin-top: 8rem;
     width: 100vw;
-    height: 4rem;
+    height: 2rem;
     background-color: #1a213d;
 }
 
@@ -112,6 +113,8 @@ a{
 
 
 .container img{
+    position: fixed;
+    margin-bottom: 2rem;
     margin-left: 4rem;
     width: 45vw;
     bottom: 0;
