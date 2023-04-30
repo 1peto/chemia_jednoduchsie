@@ -1,8 +1,10 @@
-.canvas-container{
+#canvas-container{
+    display: flex;
     margin-left: 10vw;
     margin-right: 10vw;
-
+    justify-content: center;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +15,24 @@
 body{
     text-align: center;
     font-size: 24px;
+}
+
+footer{
+    display: flex;
+    padding-left: 4%;
+    justify-content: left;
+    align-items: center;
+    margin-top: 8rem;
+    width: 100vw;
+    height: 4rem;
+    background-color: #1a213d;
+}
+
+footer h1{
+    color: #e4ebf7;
+    font-weight: 300;
+    font-size: 1rem;
+    text-shadow: 0px 6px 4px rgba(0, 0, 0, 0.5);
 }
 
 nav{
@@ -86,14 +106,14 @@ a{
     display: flex;
     align-items: flex-start;
     width: 100%;
-    min-height: calc(100vh - 3.5rem);
+    height: 73.5vh;
     margin: 0 auto;
 }
 
 
 .container img{
-    max-width: 50%;
-    position: fixed;
+    margin-left: 4rem;
+    width: 45vw;
     bottom: 0;
     right: 0;
     z-index: -1;
@@ -117,7 +137,7 @@ a{
 .container3{
     display: flex;
     flex-direction: column;
-    height: 80vh;
+    height: 100vh;
     margin-left: 15vw;
     margin-right: 15vw;
 }
@@ -127,7 +147,7 @@ a{
     flex-direction: column;
     text-align: left;
     margin-top: 5vh;
-    height: 40vh;
+    height: 100vh;
 }
 
 .hboxzluc h3{
@@ -137,8 +157,12 @@ a{
 }
 
 .hboxzluc p{
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     font-size: 1.2rem;
+}
+
+.rovnice{
+    margin-bottom: 1.5rem;
 }
 
 .podnadpis{
@@ -156,8 +180,7 @@ a{
     display: flex;
     flex-direction: row;
     text-align: left;
-    height: 50vh;
-    width: 100%;
+    height: 22vh;
     margin-top: 2rem;
 }
 
@@ -165,9 +188,8 @@ a{
     display: flex;
     flex-direction: column;
     text-align: left;
-    height: 40vh;
+    height: 37vh;
     width: 60%;
-    font-size: 1.4rem;
 }
 
 .hboxzluc2_text h3{
@@ -179,12 +201,19 @@ a{
 
 .hboxzluc2_text p{
     font-size: 1.2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     width: 100%;
 }
 
+.hboxzluc2_text ul{
+    margin-left: 1.5rem;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
 .hboxzluc2_obrazok{
-    margin-left: 11rem;
+    display: flex;
+    justify-content: center;
 }
 
 .header h2{
