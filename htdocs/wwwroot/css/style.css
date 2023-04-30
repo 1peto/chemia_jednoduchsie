@@ -32,7 +32,7 @@ nav h1{
     text-shadow: 0px 6px 4px rgba(0, 0, 0, 0.5);
 }
 
-.navbrom{
+.navspec{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -42,41 +42,14 @@ nav h1{
     padding-left: 4%;
 }
 
-.navbrom h1{
+.navspec h1{
     color: #e4ebf7;
     font-weight: 300;
     font-size: 2.25rem;
     text-shadow: 0px 6px 4px rgba(0, 0, 0, 0.5);
 }
 
-.navbrom h2{
-    color: #e4ebf7;
-    font-weight: 300;
-    font-size: 1.5rem;
-    text-shadow: 0px 6px 4px rgba(0, 0, 0, 0.5);
-    margin-left: 1rem;
-    padding-left: 1rem;
-    border-left: solid #e4ebf7;
-}
-
-.navchlor{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: #253369;
-    width: 100vw;
-    height: 3.5rem;
-    padding-left: 4%;
-}
-
-.navchlor h1{
-    color: #e4ebf7;
-    font-weight: 300;
-    font-size: 2.25rem;
-    text-shadow: 0px 6px 4px rgba(0, 0, 0, 0.5);
-}
-
-.navchlor h2{
+.navspec h2{
     color: #e4ebf7;
     font-weight: 300;
     font-size: 1.5rem;
@@ -153,45 +126,27 @@ a{
     display: flex;
     flex-direction: column;
     text-align: left;
-    margin-top: 6vh;
+    margin-top: 5vh;
     height: 40vh;
 }
 
 .hboxzluc h3{
     margin-bottom: 1.5rem;
-    font-size: 28px;
+    font-size: 1.5rem;
     border-bottom: solid 0.35vh #7CB305;
 }
 
 .hboxzluc p{
     margin-bottom: 2rem;
-    font-size: 1.4rem;
-}
-
-.hboxzluc1{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    margin-top: 6vh;
-    height: 40vh;
-}
-
-.hboxzluc1 h3{
-    margin-bottom: 1.5rem;
-    font-size: 25px;
-    border-bottom: solid 0.35vh #7CB305;
-}
-
-.hboxzluc1 p{
-    margin-bottom: 2rem;
-    font-size: 19px;
+    font-size: 1.2rem;
 }
 
 .podnadpis{
     display: flex;
     width: 70vw;
-    justify-content: center;
-    font-size: 1.5rem;
+    justify-content: start;
+    margin-left: 2rem;
+    font-size: 1.2rem;
     text-decoration: underline;
     text-decoration-color: #597ef7;
     text-underline-offset: 0.6rem;
@@ -215,42 +170,20 @@ a{
     font-size: 1.4rem;
 }
 
-.hboxzluc2_text1{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    height: 40vh;
-    width: 60%;
-    font-size: 1.4rem;
-}
-
-.hboxzluc2_text1 h3{
-    margin-bottom: 1.5rem;
-    font-size: 25px;
-    border-bottom: solid #597ef7;
-    width: 85%;
-}
-
-.hboxzluc2_text1 p{
-    font-size: 19px;
-    margin-bottom: 2rem;
-    width: 100%;
-}
-
 .hboxzluc2_text h3{
     margin-bottom: 1.5rem;
-    font-size: 28px;
+    font-size: 1.5rem;
     border-bottom: solid #597ef7;
     width: 85%;
 }
 
 .hboxzluc2_text p{
-    font-size: 22px;
+    font-size: 1.2rem;
     margin-bottom: 2rem;
     width: 100%;
 }
 
-.hboxzluc2_obrazok1{
+.hboxzluc2_obrazok{
     margin-left: 11rem;
 }
 
@@ -476,11 +409,7 @@ tr:nth-child(even){
     font-size: 1.5rem;
     }
 
-    .navbrom h2{
-        display: none;
-    }
-
-    .navchlor h2{
+    .navspec h2{
         display: none;
     }
 
@@ -495,7 +424,7 @@ tr:nth-child(even){
         font-size: 1.25rem;
     }
 
-    .hboxzluc2_obrazok1{
+    .hboxzluc2_obrazok{
         display: none;
         margin: 0;
     }
@@ -513,24 +442,12 @@ tr:nth-child(even){
         font-size: 1.2rem;
     }
 
-    .hboxzluc1 h2{
-        font-size: 2rem;
-    }
-
-    .hboxzluc1 p{
-        font-size: 1.2rem;
-    } 
-
     .podnadpis{
         font-size: 2rem;
         width: 90vw;
     }
     
     .hboxzluc2_text{
-        width: 100vw;
-    }
-
-    .hboxzluc2_text1{
         width: 100vw;
     }
 
@@ -557,21 +474,12 @@ tr:nth-child(even){
         font-size: 1.6rem;
     }
 
-    .navbrom{
+    .navspec{
         padding: 0;
         justify-content: center;  
     }
 
-    .navbrom h1{
-        font-size: 1.6rem;
-    }
-
-    .navchlor{
-        padding: 0;
-        justify-content: center;
-    }
-
-    .navchlor h1{
+    .navspec h1{
         font-size: 1.6rem;
     }
 
@@ -593,14 +501,6 @@ tr:nth-child(even){
     .hboxzluc p{
         font-size: 1rem;
     }
-
-    .hboxzluc1 h2{
-        font-size: 1.5rem;
-    }
-
-    .hboxzluc1 p{
-        font-size: 1rem;
-    } 
 
     .podnadpis{
         font-size: 1.5rem;
