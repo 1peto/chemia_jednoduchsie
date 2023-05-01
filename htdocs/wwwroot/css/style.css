@@ -10,22 +10,49 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto';
+}
+
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #253369 #cccccc;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #cccccc;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #253369;
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: #384d9e;
+    border-radius: 10px;
+    border: 0px none #ffffff;
   }
 
 body{
     text-align: center;
     font-size: 24px;
     min-height: 100vh;
+    padding-bottom: 3rem;
 }
 
 footer{
+    width: 100vw;
+    max-width: 100%;
+    overflow: hidden;
     position: fixed;
+    justify-content: left;
     bottom: 0;
     display: flex;
     padding-left: 4%;
-    justify-content: left;
     align-items: center;
-    width: 100vw;
     height: 2.5rem;
     background-color: #1a213d;
 }
@@ -35,6 +62,7 @@ footer h1{
     font-weight: 300;
     font-size: 1rem;
     text-shadow: 0px 6px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
 }
 
 nav{
@@ -43,8 +71,14 @@ nav{
     align-items: center;
     background-color: #253369;
     width: 100vw;
+    max-width: 100%;
+    overflow: hidden;
     height: 3.5rem;
     padding-left: 4%;
+}
+
+nav a {
+    text-decoration: none;
 }
 
 nav h1{
@@ -81,6 +115,54 @@ nav h1{
     border-left: solid #e4ebf7;
 }
 
+/* Samuel Kode */
+.main-grid {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 5px 2px; 
+    grid-template-areas: 
+      "info reakcia"
+      "vyuzitie vyuzitie"
+      "model model";
+}
+
+.info { 
+    grid-area: info;
+    padding: .5rem; 
+}
+
+.reakcie { 
+    grid-area: reakcia; 
+    padding: .5rem; 
+}
+
+.vyuzitie { 
+    grid-area: vyuzitie; 
+    padding: .5rem; 
+} 
+
+.model { 
+    grid-area: model; 
+}
+
+.info h3, .reakcie h3{
+    border-bottom: solid #597ef7;
+}
+
+.vyuzitie h3, .model h3{
+    border-bottom: solid #7CB305;
+}
+
+.hero-image {
+    position: fixed;
+    z-index: -1;
+    width: 50vw;
+    right: 0;
+    bottom: 2.5rem;
+}
+
+/* Toto uz neni Samuelov kode */
 .promo1{
     position: absolute;
     top: 0;
@@ -102,25 +184,6 @@ h1:hover {
 
 a{
     text-decoration: none;
-}
-  
-.container {
-    display: flex;
-    align-items: flex-start;
-    width: 100%;
-    height: 73.5vh;
-    margin: 0 auto;
-}
-
-
-.container img{
-    position: fixed;
-    margin-bottom: 2rem;
-    margin-left: 4rem;
-    width: 45vw;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
 }
 
 .container2 {
@@ -401,7 +464,7 @@ tr:nth-child(even){
 }
 
 @media only screen and (max-width: 912px) {
-    .container img {
+    .hero-image {
         display: none;
     }
 
@@ -494,6 +557,16 @@ tr:nth-child(even){
 }
 
 @media only screen and (max-width: 564px) {
+    .main-grid{
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto auto auto auto; 
+        gap: 5px 2px; 
+        grid-template-areas: 
+        "info" "reakcia"
+        "vyuzitie"
+        "model";
+    }
     .header h2{
         font-size:1.8rem ;
     }
