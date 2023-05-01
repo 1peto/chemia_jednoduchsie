@@ -42,18 +42,22 @@ body{
     min-height: 100vh;
     padding-bottom: 3rem;
 }
+h1,h2,h3,h4,h5{
+    margin: 0;
+    padding: 0;
+}
 
 footer{
+    position: fixed;
+    bottom: 0;
     width: 100vw;
     max-width: 100%;
     overflow: hidden;
-    position: fixed;
     justify-content: left;
-    bottom: 0;
     display: flex;
     padding-left: 4%;
     align-items: center;
-    height: 2.5rem;
+    height: 2.2rem;
     background-color: #1a213d;
 }
 
@@ -81,11 +85,13 @@ nav a {
     text-decoration: none;
 }
 
-nav h1{
+nav a h1{
+    align-items:center;
     color: #e4ebf7;
     font-weight: 300;
     font-size: 2.25rem;
     text-shadow: 0px 6px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
 }
 
 .navspec{
@@ -159,24 +165,21 @@ nav h1{
     z-index: -1;
     width: 50vw;
     right: 0;
-    bottom: 2.5rem;
+    bottom: 2.2rem;
 }
 
 /* Toto uz neni Samuelov kode */
 .promo1{
     position: absolute;
-    top: 0;
-    right: 0;
-    margin-right: 9rem;
-    margin-top: 0.5rem;
+    top: 0.5rem;
+    right: 9rem;
+
 
 }
 .promo2{
     position: absolute;
-    top: 0;
-    right: 0;
-    margin-right: 6rem;
-    margin-top: 0.5rem;
+    top: 0.5rem;
+    right: 6rem;
 }
 h1:hover {
     color: #ADC6FF;
@@ -373,6 +376,11 @@ a{
     font-size: 2.8vh;
     font-weight: 300;
     text-align: center;
+    margin: 0;
+
+}
+.button a{
+    text-decoration: none;
 }
 
 .button h4:hover{
@@ -401,8 +409,11 @@ a{
     font-size: 2vh;
     font-weight: 300;
     text-align: center;
+    margin: 0;
 }
-
+.buttonlist a{
+    text-decoration: none;
+}
 .buttonlist h4:hover{
     color: #253369;
 }
@@ -463,7 +474,11 @@ tr:nth-child(even){
     color: #d5dce8;
 }
 
-@media only screen and (max-width: 912px) {
+@media only screen and (max-width: 992px) {
+    footer h1{
+        font-size:0.9rem;
+    }
+
     .hero-image {
         display: none;
     }
@@ -511,7 +526,7 @@ tr:nth-child(even){
 
 }
 
-@media only screen and (max-width: 1120px) {
+@media only screen and (max-width: 1200px) {
     .container2 img {
         display: none;
     }
@@ -556,7 +571,11 @@ tr:nth-child(even){
     }
 }
 
-@media only screen and (max-width: 564px) {
+@media only screen and (max-width: 600px) {
+    footer h1{
+        font-size:0.75rem;
+    }
+
     .main-grid{
         display: grid; 
         grid-template-columns: 1fr; 
@@ -576,8 +595,9 @@ tr:nth-child(even){
         justify-content: center;    
     }
 
-    nav h1{
+    nav a h1{
         font-size: 1.6rem;
+        align-items: center;
     }
 
     .navspec{
