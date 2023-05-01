@@ -15,17 +15,18 @@
 body{
     text-align: center;
     font-size: 24px;
+    min-height: 100vh;
 }
 
 footer{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     display: flex;
     padding-left: 4%;
     justify-content: left;
     align-items: center;
     width: 100vw;
-    height: 2rem;
+    height: 2.5rem;
     background-color: #1a213d;
 }
 
@@ -183,7 +184,7 @@ a{
     display: flex;
     flex-direction: row;
     text-align: left;
-    height: 22vh;
+    height: 40vh;
     margin-top: 2rem;
 }
 
