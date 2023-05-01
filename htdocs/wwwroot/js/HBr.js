@@ -63,7 +63,7 @@ function init() {
   camera.position.set(0, 0, 10);
 
   renderer = new THREE.WebGLRenderer({ antialias: true });
-  renderer.setSize(window.innerHeight/2, window.innerHeight/2);
+  renderer.setSize(window.innerHeight/3, window.innerHeight/3);
   renderer.shadowMap.enabled = true;
   renderer.shadowMap.type = THREE.PCFSoftShadowMap;
   const container = document.getElementById('canvas-container');
