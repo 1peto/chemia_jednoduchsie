@@ -1,11 +1,6 @@
 # Chemia jendoduchsie
 
 ## Todo
-- [x] SPOJIT ASI TIE DVE CSS SUBORY
-- [x] KED SA DA DACO ZROBIT S OBRAZKOM ABY SA STRCIL NA BOK STRANKY FURT
-- [x] zabezpecit overflow dajak tak keby sa nahodou stranka stlacila do menseho rozlisenia aby isiel obrazok dolu
-- [x] PRIDAT STRANKU TAKU DAJAKU TABULKU NA VYBER ZLUCENIN 
-- [x] ROZDELIT MODELY
 - [ ] OPTIMALIZOVAT CSS vymazat shitne divka
 - [ ] DAT BOOTSTRAP NA VSETKY STRANKY
 - [ ] FIXNUT BOOTSTRAP MARGINY NA NAVIGACII
