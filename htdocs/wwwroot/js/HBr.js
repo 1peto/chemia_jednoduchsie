@@ -56,14 +56,14 @@ function addSphere() {
 function init() {
   camera = new THREE.PerspectiveCamera(
     50,
-    window.innerHeight / window.innerHeight,
+    window.innerHeight*1.4 / window.innerHeight,
     0.01,
     1000
   );
-  camera.position.set(0, 0, 10);
+  camera.position.set(0, 0, 8);
 
   renderer = new THREE.WebGLRenderer({ antialias: true });
-  renderer.setSize(window.innerHeight/3, window.innerHeight/3);
+  renderer.setSize(window.innerHeight*0.7, window.innerHeight*0.5);
   renderer.shadowMap.enabled = true;
   renderer.shadowMap.type = THREE.PCFSoftShadowMap;
   const container = document.getElementById('canvas-container');
@@ -83,7 +83,6 @@ function render() {
   renderer.render(scene, camera);
   camera.lookAt(scene.position);
 }
-
 
 init();
 render();
