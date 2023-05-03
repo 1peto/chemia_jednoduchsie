@@ -67,6 +67,12 @@ footer h1{
     margin: 0;
 }
 
+
+footer a{
+    color: #e4ebf7;
+    text-decoration: none;
+}
+
 nav{
     display: flex;
     flex-direction: row;
@@ -167,6 +173,11 @@ nav a h1{
 }
 
 /* Toto uz neni Samuelov kode */
+
+#canvas-container a{
+    margin-left: 1.5rem;
+}
+
 .promo1{
     position: absolute;
     top: 0.5rem;
@@ -230,7 +241,7 @@ a{
 }
 
 .rovnice{
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .podnadpis{
