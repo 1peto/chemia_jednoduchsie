@@ -55,11 +55,7 @@ function addModel(canvasId, path, scale){
 
     function init() {
         const container = document.getElementById(canvasId);
-        console.log(container)
-        // Get witdh and height of the container
-        const width = container.clientWidth;
-        const height = container.clientHeight;
-        console.log(width, height)
+        
         camera = new THREE.PerspectiveCamera(
             70,
             container.clientWidth / ((container.clientWidth / 16) * 9),
