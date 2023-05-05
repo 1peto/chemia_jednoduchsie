@@ -9,7 +9,15 @@
 <script src="/htdocs/wwwroot/js/threejs/build/three.js"></script>
 <script src="/htdocs/wwwroot/js/threejs/js/controls/OrbitControls.js"></script>
 <script src="/htdocs/wwwroot/js/threejs/js/loaders/GLTFLoader.js"></script>
+<script src="../wwwroot/js/modelViewport.js"></script>
 <body>
-    <script id="canvas" src="/htdocs/wwwroot/js/HBr.js"></script>
+    <div class="model">
+        <div id="canvas-container" class="w-100">
+            <a href="/htdocs/models_viewport/HBr.html"><img src="/htdocs/images/fullscreen.png"></a>
+        </div>
+    </div>
 </body>
+<script>
+    addModel("canvas-container", "/htdocs/models/anorganicke/HBr.glb");
+</script>
 </html>

@@ -1,5 +1,5 @@
 
-function addModel(canvasId, path, scale){
+function addModel(canvasId, path){
     var camera, scene, renderer, controls, model;
 
     function addLights() {
@@ -55,7 +55,6 @@ function addModel(canvasId, path, scale){
 
     function init() {
         const container = document.getElementById(canvasId);
-        
         camera = new THREE.PerspectiveCamera(
             70,
             container.clientWidth / ((container.clientWidth / 16) * 9),
@@ -65,28 +64,23 @@ function addModel(canvasId, path, scale){
         camera.position.set(0, 0, 5);
 
         renderer = new THREE.WebGLRenderer({ antialias: true });
-        
         renderer.setSize(container.clientWidth, (container.clientWidth / 16) * 9);
         renderer.shadowMap.enabled = true;
         renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+        
         container.appendChild(renderer.domElement);
-
         scene = new THREE.Scene();
-
         addLights();
         addSphere()
         addModel();
-
         controls = new THREE.OrbitControls(camera, renderer.domElement);
     }
 
     function render() {
     requestAnimationFrame(render);
-
     renderer.render(scene, camera);
     camera.lookAt(scene.position);
     }
-
 
     init();
     render();
