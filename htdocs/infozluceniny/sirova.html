@@ -17,6 +17,7 @@
 <script src="/htdocs/wwwroot/js/threejs/build/three.js"></script>
 <script src="/htdocs/wwwroot/js/threejs/js/controls/OrbitControls.js"></script>
 <script src="/htdocs/wwwroot/js/threejs/js/loaders/GLTFLoader.js"></script>
+<script src="../wwwroot/js/modelViewport.js"></script>
 
 <body>
     <nav class="navspec">
@@ -58,13 +59,15 @@
         </div>
     
         <div class="model">
-            <img src="/htdocs/images/model tu.png" alt="404">
+            <div id="canvas-container" class="w-100">
+              <a href="/htdocs/models_viewport/H2SO4.html"><img src="/htdocs/images/fullscreen.png"></a>
+            </div>
+          </div>
         </div>
-    </div>
     
     <footer>
         <h1>Chémia jednoduchšie ┃ ©2023 ┃<a href="https://www.instagram.com/patrikragy/" target="_blank">Patrik Ragan</a>┃<a href="https://www.instagram.com/r_demjan04/" target="_blank">René Demjan</a>┃<a href="https://www.instagram.com/_ivomicisin/" target="_blank">Ivo Micišin</a>┃<a href="https://www.instagram.com/david_t_toma/" target="_blank">Dávid Toma</a></h1> 
     </footer>
-      
+    <script>addModel("canvas-container", "/htdocs/models/anorganicke/HI.glb");</script>  
 </body>
 </html>

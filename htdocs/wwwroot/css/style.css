@@ -3,7 +3,26 @@
     justify-content: center;
     position: relative;
 }
+.bodyfs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+.model-fs{
+    height:100vh;
+    width:89.556vw;
+    overflow: hidden;
+    position: absolute; 
+    margin: 0;
+}
+.model-fs a,.model-fs img{
+    cursor: pointer;
+    height: 5vh;
+    width: 5vh;
+    margin-top: 2vh;
 
+}
 * {
     margin: 0;
     padding: 0;
