@@ -520,6 +520,11 @@ tbody tr td {
 }
 
 @media only screen and (max-width: 600px) {
+    td .btn {
+        font-size: 0.75rem;
+        padding: 0;
+        margin: 0;
+    }
     footer h1 {
         font-size: 0.75rem;
     }
