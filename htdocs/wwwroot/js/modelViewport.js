@@ -37,6 +37,7 @@ function addModel(canvasId, path){
             model.position.set(0, 0, 0);
             model.rotation.set(0, 0, 0)
             model.castShadow = true;
+            model.emission = true;
         });
     }
 
@@ -56,12 +57,12 @@ function addModel(canvasId, path){
     function init() {
         const container = document.getElementById(canvasId);
         camera = new THREE.PerspectiveCamera(
-            70,
+            50,
             container.clientWidth / ((container.clientWidth / 16) * 9),
             0.01,
             1000
         );
-        camera.position.set(0, 0, 5);
+        camera.position.set(0, 0, 8);
 
         renderer = new THREE.WebGLRenderer({ antialias: true });
         renderer.setSize(container.clientWidth, (container.clientWidth / 16) * 9);
