@@ -24,18 +24,18 @@
         <div class="info">
             <h3>Základne informácie</h3>
             <p>
-                <?php echo $array[2]; ?>
+                <?php echo $array[3]; ?>
             </p>
         </div>
     
         <div class="reakcie">
             <h3>Reakcie</h3>
-            <?php echo $array[3]; ?>
+            <?php echo $array[4]; ?>
         </div>
     
         <div class="vyuzitie">
             <h3>Využitie</h3>
-            <?php echo $array[4]; ?>
+            <?php echo $array[5]; ?>
         </div>
     
         <div class="model">
