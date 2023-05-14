@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="../wwwroot/css/style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <title>Chémia jednoduchšie ┃ Sulfán</title>
+</head>
+
+<script src="../wwwroot/js/threejs/build/three.js"></script>
+<script src="../wwwroot/js/threejs/js/controls/OrbitControls.js"></script>
+<script src="../wwwroot/js/threejs/js/loaders/GLTFLoader.js"></script>
+<script src="../wwwroot/js/modelViewport.js"></script>
+
+<body>
+    <nav class="navspec">
+        <a href="../index.html"><h1>Chémia jednoduchšie</h1></a>
+        <h2 class="mb-0"><strong>Dusičnan draselný</strong></h2>
+        <a href="https://www.facebook.com/gymtv.sk/" target="_blank" class="promo1"><img src="../images/facebook.png"
+            alt="facebook" width="40vh" /></a>
+        <a href="https://www.instagram.com/gymtv321/" target="_blank" class="promo2"><img src="../images/instagram.png"
+            alt="instagram" width="40vh" /></a>
+    </nav>
+
+    <div class="container main-grid mt-5">
+        <div class="info">
+            <h3>Základne informácie</h3>
+            <ul>
+                <li><strong>Chemický vzorec</strong>: KNO₃</li>
+                <li><strong>Molekulová hmotnosť</strong>: 101,1032 g/mol</li>
+                <li><strong>Fyzikálne vlastnosti</strong>: KNO₃ je biela krystalická látka s teplotou tavenia okolo 334 °C a hustotou približne 2,109 g/cm³.</li>
+                <li><strong>Rozpustnosť</strong>: KNO₃ je dobre rozpustný vo vode a mierne rozpustný v alkoholoch. Jeho rozpustnosť sa zvyšuje so zvyšujúcou sa teplotou vody.</li>
+                <li><strong>Výskyt</strong>: KNO₃ sa v prírode vyskytuje ako minerál, a je možné ho získať aj synteticky.</li>
+                </ul>
+        </div>
+    
+        <div class="reakcie">
+            <h3>Reakcie</h3>
+            <li><strong>Oxidácia</strong>: KNO₃ má schopnosť slúžiť ako oxidátor v rôznych chemických reakciách. Pri zahrievaní s organickými látkami môže vyvolávať exotermické reakcie a uvoľňovanie kyslíka.</li>
+            <li><strong>Výroba hnojív</strong>: KNO₃ sa široko používa v poľnohospodárstve ako súčasť hnojív. Poskytuje dôležitý zdroj dusíka pre rastliny a zároveň obsahuje draslík, ktorý je nevyhnutný pre ich správny vývoj.</li>
+            <li><strong>Pyrotechnika</strong>: KNO₃ je dôležitou zložkou mnohých pyrotechnických zmesí. V kombinácii s rôznymi palivami a ďalšími chemikáliami sa využíva na vytváranie farebných ohnivých efektov a výbušných zmesí.</li>
+        </div>
+    
+        <div class="vyuzitie">
+            <h3>Využitie</h3>
+            <ul>
+                <li><strong>Hnojivá</strong>: KNO₃ je neodmysliteľnou zložkou dusíkatých hnojív, ktoré slúžia na zvýšenie úrody v poľnohospodárstve. Jeho obsah dusíka a draslíka podporuje rast rastlín a reguluje ich metabolické procesy.</li>
+                <li><strong>Potravinárstvo</strong>: V potravinárstve sa KNO₃ používa ako konzervačný prostriedok pri spracovaní mäsa a tiež na posilnenie červenej farby mäsových výrobkov, napríklad údeného lososa.</li>
+                </ul>
+        </div>
+    
+        <div class="model">
+            <div id="canvas-container" class="w-100">
+              <a href="../models_viewport/KNO3.html"><img src="../images/fullscreen.png"></a>
+            </div>
+          </div>
+        </div>
+    
+    <footer>
+        <h1>Chémia jednoduchšie ┃ ©2023 ┃<a href="https://www.instagram.com/patrikragy/" target="_blank">Patrik Ragan</a>┃<a href="https://www.instagram.com/r_demjan04/" target="_blank">René Demjan</a>┃<a href="https://www.instagram.com/_ivomicisin/" target="_blank">Ivo Micišin</a>┃<a href="https://www.instagram.com/david_t_toma/" target="_blank">Dávid Toma</a></h1> 
+    </footer>
+    <script>addModel("canvas-container", "../models/anorganicke/KNO3.glb");</script>  
+</body>
+</html>
