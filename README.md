@@ -7,4 +7,5 @@
 - [X] pridať info o sulfáne (anorg kys)
 
 - [ ] pridat tlacitko back do navigacie aby sme sa furt mohli vratit (checkni ako som to urobil na models_viewport)
+- [ ] urobit info pre tabulku soli
 - [ ] urobit modely pre tabulku soli

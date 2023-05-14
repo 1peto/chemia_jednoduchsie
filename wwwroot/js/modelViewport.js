@@ -62,7 +62,7 @@ function addModel(canvasId, path){
             0.01,
             1000
         );
-        camera.position.set(0, 0, 8);
+        camera.position.set(0, 1, 8);
 
         renderer = new THREE.WebGLRenderer({ antialias: true });
         renderer.setSize(container.clientWidth, (container.clientWidth / 16) * 9);
