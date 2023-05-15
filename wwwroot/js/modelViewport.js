@@ -1,6 +1,6 @@
 
-function addModel(canvasId, path){
-    var camera, scene, renderer, controls, model;
+function addModel(canvasId, path1, path2){
+    var camera, scene, renderer, controls, model, metallic; 
 
     function addLights() {
     ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
@@ -31,15 +31,28 @@ function addModel(canvasId, path){
 
     function addModel() {
         const loader = new THREE.GLTFLoader();
-        loader.load(path, function (imported_model) {
+        loader.load(path1, function (imported_model) {
             scene.add(imported_model.scene);
             model = imported_model.scene;
-            model.position.set(0, 0, 0);
-            model.rotation.set(0, 0, 0)
             model.castShadow = true;
-            model.emission = true;
-        });
-    }
+            
+            if(path2.length !== 0){
+                loader.load(path2, function (imported_model2) {
+                    if(imported_model2.isMesh){
+                        const newMaterial = new THREE.MeshPhongMaterial(
+                            {   
+                                color: 0xff5684,
+                                shininess: 100,        
+                            });
+                            imported_model2.children[0].material.map = newMaterial;
+                            imported_model2.children[0].material.needsUpdate = true;
+                    }
+                    scene.add(imported_model2.scene);
+                    metallic = imported_model2.scene;
+                    metallic.castShadow = true;
+                    model.add(metallic); 
+            })};
+    })}
 
     function addSphere() {
         var geometry = new THREE.SphereGeometry(50, 50, 50);
@@ -72,7 +85,7 @@ function addModel(canvasId, path){
         container.appendChild(renderer.domElement);
         scene = new THREE.Scene();
         addLights();
-        addSphere()
+        addSphere();
         addModel();
         controls = new THREE.OrbitControls(camera, renderer.domElement);
     }
