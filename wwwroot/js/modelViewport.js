@@ -29,30 +29,35 @@ function addModel(canvasId, path1, path2){
     // scene.add(helper3)
     }
 
-    function addModel() {
-        const loader = new THREE.GLTFLoader();
-        loader.load(path1, function (imported_model) {
-            scene.add(imported_model.scene);
-            model = imported_model.scene;
-            model.castShadow = true;
-            
-            if(path2.length !== 0){
-                loader.load(path2, function (imported_model2) {
-                    if(imported_model2.isMesh){
-                        const newMaterial = new THREE.MeshPhongMaterial(
-                            {   
-                                color: 0xff5684,
-                                shininess: 100,        
-                            });
-                            imported_model2.children[0].material.map = newMaterial;
-                            imported_model2.children[0].material.needsUpdate = true;
-                    }
-                    scene.add(imported_model2.scene);
-                    metallic = imported_model2.scene;
-                    metallic.castShadow = true;
-                    model.add(metallic); 
-            })};
-    })}
+function addModel() {
+    const loader = new THREE.GLTFLoader();
+    loader.load(path1, function (imported_model) {
+        scene.add(imported_model.scene);
+        model = imported_model.scene;
+        model.castShadow = true;
+
+        if (path2.length !== 0) {
+            loader.load(path2, function (imported_model2) {
+            const newMaterial = new THREE.MeshPhongMaterial({
+                color: 0x2e2e30,
+                shininess: 100,
+                skinning: true,
+                specular: 0x3e3e42,
+                
+            });
+            metallic = imported_model2.scene;
+            metallic.traverse(function (child) {
+                child.material = newMaterial;
+                child.material.needsUpdate = true;
+            });
+            scene.add(imported_model2.scene);
+            //metallic = imported_model2.scene;
+            metallic.castShadow = true;
+            model.add(metallic);
+            });
+        }
+    });
+}
 
     function addSphere() {
         var geometry = new THREE.SphereGeometry(50, 50, 50);
