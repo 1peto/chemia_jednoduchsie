@@ -6,7 +6,7 @@ function addModel(canvasId, path1, path2){
     ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
     scene.add(ambientLight);
 
-    var pointLight1 = new THREE.PointLight(0xffffff, 1, 5);
+    var pointLight1 = new THREE.PointLight(0xffffff, 1, 3.5);
     pointLight1.position.set(3, 2, 3);
     pointLight1.castShadow = true;
     scene.add(pointLight1);
