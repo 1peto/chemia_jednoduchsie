@@ -229,7 +229,7 @@ nav a h1 {
     right: 6rem;
 }
 
-h1:hover {
+nav h1:hover {
     color: #ADC6FF;
 }
 
@@ -530,6 +530,16 @@ tbody tr td {
 
     table {
         width: 100%;
+    }
+    .teta{
+        width: 90vw;
+    }
+    .container-fluid-empty h2 {
+        font-family: 'Roboto';
+        color: #000;
+        font-size: 7vw;
+        font-weight: 300;
+        margin: 1.5rem;
     }
 }
 
