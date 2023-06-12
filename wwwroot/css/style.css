@@ -215,7 +215,7 @@ nav a h1 {
     top: 10px;
 }
 
-.infoback{
+nav .infoback{
     margin-left: 1rem;
     cursor: pointer;
 }
