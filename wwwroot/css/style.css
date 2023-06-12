@@ -215,6 +215,11 @@ nav a h1 {
     top: 10px;
 }
 
+.infoback{
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
 .promo1 {
     position: absolute;
     top: 0.5rem;
